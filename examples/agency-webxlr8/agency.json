@@ -1,0 +1,55 @@
+{
+  "name": "WebXLR8",
+  "website": "webxlr8.com",
+  "email": "contact@webxlr8.com",
+  "phone": "+91 94464 40215",
+  "office": "Kochi, Kerala, India",
+  "tagline": "Technology doesn't transform businesses. Execution does.",
+  "about": "WebXLR8 is a technology partner based in Kochi. We design, build and run websites and online stores, and we stay on after launch.",
+  "colors": {
+    "accent": "#ff6a3a",
+    "accent_2": "#ff3d00",
+    "accent_3": "#ffb03a",
+    "accent_ink": "#c2410c",
+    "dark": "#0b0b0b"
+  },
+  "logo_on_light": "logo-black.png",
+  "logo_on_dark": "logo-white.png",
+  "icon": "favicon.png",
+  "stats": [
+    {
+      "n": "100+",
+      "label": "brands worldwide"
+    },
+    {
+      "n": "98%",
+      "label": "client satisfaction and retention"
+    },
+    {
+      "n": "99.9%",
+      "label": "uptime on systems we run"
+    },
+    {
+      "n": "6",
+      "label": "skills under one team"
+    }
+  ],
+  "default_fit": [
+    {
+      "k": "Online stores",
+      "title": "Store builds",
+      "text": "Brand and online store builds for retail and D2C brands."
+    },
+    {
+      "k": "Payments",
+      "title": "Payments and delivery",
+      "text": "We set up payment gateways and delivery integrations for online stores."
+    },
+    {
+      "k": "After launch",
+      "title": "We stay",
+      "text": "The team that builds your website also looks after it."
+    }
+  ],
+  "client_logos": []
+}

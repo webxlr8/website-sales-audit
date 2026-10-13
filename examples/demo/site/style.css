@@ -1,0 +1,15 @@
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 Georgia,serif;color:#2b2b2b;background:#fff}
+.bar{background:#3b4a3f;color:#fff;text-align:center;font:13px Arial;padding:7px}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 40px;border-bottom:1px solid #eee;font-family:Arial}
+header b{font:700 22px Georgia;color:#3b4a3f}header nav a{margin:0 12px;color:#333;text-decoration:none;font-size:14px}
+.sofa{background:linear-gradient(180deg,#efe6da 0 55%,#d9cbb8 55% 100%);position:relative;border-radius:10px;overflow:hidden}
+.sofa:before{content:"";position:absolute;left:14%;right:14%;bottom:22%;height:30%;background:#8a9a82;border-radius:26px 26px 10px 10px}
+.sofa:after{content:"";position:absolute;left:10%;right:10%;bottom:14%;height:18%;background:#74856d;border-radius:14px}
+.wrap{max-width:1180px;margin:30px auto;padding:0 30px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px}
+h1{font-size:30px;margin:0 0 6px}.price{font:700 24px Arial;color:#3b4a3f}.box{border:1px solid #ddd;border-radius:8px;padding:12px;margin:14px 0;font:14px Arial}
+.btn{display:block;width:100%;padding:14px;border:0;border-radius:30px;background:#3b4a3f;color:#fff;font:600 15px Arial;margin:8px 0}
+.tab{border-top:1px solid #ddd;padding:12px 0;font:14px Arial}.tab h3{margin:0 0 6px;font:600 15px Arial}
+.wa{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font:700 22px Arial}
+.sticky{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #ddd;padding:10px;display:none;gap:8px;font-family:Arial}
+.sticky select{flex:1;padding:12px;border-radius:24px;border:1px solid #ccc;font-size:14px;max-width:46%}.sticky button{flex:1;border:0;border-radius:24px;background:#111;color:#fff;font:600 15px Arial}
+@media(max-width:600px){.wrap{grid-template-columns:1fr}header nav{display:none}.sticky{display:flex}header{padding:14px 18px}}

@@ -1,0 +1,196 @@
+{
+  "client": {
+    "name": "Oakline Home",
+    "legal": "Oakline Home (fictional demo store)",
+    "site": "oaklinehome.example",
+    "url": "https://oaklinehome.example",
+    "cover_photo": "img/cover_photo.jpg",
+    "font": {
+      "family": "Lora",
+      "google": true
+    }
+  },
+  "date": "13 October 2026",
+  "subtitle": "This is a demo report for a fictional furniture store. Every problem is shown with a screenshot and exactly where to find it.",
+  "issues": [
+    {
+      "n": 1,
+      "severity": "Urgent",
+      "area": "Checkout",
+      "layout": "full",
+      "title": "Customers cannot pay online",
+      "where_short": "Checkout page",
+      "say": "When a customer tries to buy, the checkout page says <b>\"This store can't accept payments right now.\"</b> The order cannot be completed.",
+      "where": "<span class=\"path\">Open any product <i>→</i> click <b>Add to Cart</b> <i>→</i> click <b>Checkout</b> <i>→</i> scroll down to <b>Payment</b></span><br>Example: <a href=\"https://oaklinehome.example/products/linden-sofa\">oaklinehome.example/products/linden-sofa</a>",
+      "visuals": [
+        {
+          "type": "frame",
+          "img": "img/checkout.jpg",
+          "url": "oaklinehome.example/checkout",
+          "caption": "The payment block offers no payment method."
+        }
+      ],
+      "why": "Every customer who tries to buy online leaves without paying. Money spent on ads is wasted.",
+      "fix": "Set up online payments, including instalments, and complete the store's official policy pages."
+    },
+    {
+      "n": 2,
+      "severity": "Urgent",
+      "area": "Product pages",
+      "layout": "full",
+      "title": "Product pages show a clothing shop's policies",
+      "where_short": "Every product page",
+      "say": "Every product page says the store sells <b>\"clothing items\"</b> and accepts <b>returns within 30 days</b>. The store sells made-to-order furniture with no returns.",
+      "where": "<span class=\"path\">Open any product <i>→</i> scroll below <b>Add to Cart</b> <i>→</i> read <b>Shipping and Returns</b> and <b>Return Policies</b></span>",
+      "visuals": [
+        {
+          "type": "frame",
+          "img": "img/pdp_tabs.jpg",
+          "url": "oaklinehome.example/products/linden-sofa",
+          "caption": "The yellow words are copied from the theme's demo store.",
+          "width": "62%"
+        },
+        {
+          "type": "table",
+          "head": [
+            "The website says",
+            "The truth"
+          ],
+          "rows": [
+            [
+              "\"clothing items… fashion essentials\"",
+              "Handmade furniture"
+            ],
+            [
+              "\"3-5 business days\"",
+              "4–6 weeks to make"
+            ],
+            [
+              "\"return… within 30 days\"",
+              "Made to order: no returns"
+            ]
+          ]
+        }
+      ],
+      "why": "Buyers see clothing text on a $1,890 sofa and stop trusting the store.",
+      "fix": "Replace the text on every product page with the real delivery, warranty and return terms."
+    },
+    {
+      "n": 3,
+      "severity": "Urgent",
+      "area": "Trust",
+      "title": "Fake \"people viewing\" and \"only 10 left\"",
+      "where_short": "Every product page, near the price",
+      "say": "A random visitor count and a fake stock warning appear on furniture that is made to order. The delivery box also promises returns.",
+      "where": "Open any product and look under the price and above <b>Add to Cart</b>. Refresh: the number changes.",
+      "visuals": [
+        {
+          "type": "frame",
+          "img": "img/pdp_top.jpg",
+          "url": "oaklinehome.example/products/linden-sofa"
+        }
+      ],
+      "why": "Shoppers notice fake numbers and stop trusting the brand.",
+      "fix": "Remove both and show real reasons to buy: warranty, crafting time, local delivery."
+    },
+    {
+      "n": 4,
+      "severity": "Urgent",
+      "area": "Mobile",
+      "title": "Chat button covers \"Add to Cart\" on phones",
+      "where_short": "Product page, mobile",
+      "say": "On phones, the green chat button sits on top of the Add to Cart button and the price box is cut off.",
+      "where": "On a phone, open any product and scroll down until the bottom bar appears.",
+      "visuals": [
+        {
+          "type": "phones",
+          "items": [
+            {
+              "img": "img/m_sticky.jpg"
+            }
+          ],
+          "note": "1. Chat button on top of Add to Cart. 2. Button text cut. 3. Price box cut off."
+        }
+      ],
+      "why": "Customers tap chat by mistake instead of buying.",
+      "fix": "Move the chat button and fix the bottom bar."
+    }
+  ],
+  "more": {
+    "lead": "These are missing today. Each one is common on furniture sites that sell well.",
+    "items": [
+      {
+        "what": "Customer reviews",
+        "today": "0 reviews",
+        "do": "Bring Google reviews onto the website, with stars on every product."
+      },
+      {
+        "what": "Instalments",
+        "today": "not shown",
+        "do": "\"Pay monthly from $X\" under every price."
+      },
+      {
+        "what": "Sizes",
+        "today": "no measurements",
+        "do": "A clear size table on every product."
+      },
+      {
+        "what": "Google search",
+        "today": "generic page titles",
+        "do": "Proper titles and descriptions for every page."
+      }
+    ]
+  },
+  "plan": {
+    "title": "A selling website in 30 days",
+    "lead": "Week 1 stops the loss. Weeks 2–4 bring more sales.",
+    "weeks": [
+      {
+        "label": "Week 1",
+        "title": "Fix urgent problems",
+        "items": [
+          "Online payments working",
+          "Correct product text",
+          "Remove fake numbers",
+          "Fix mobile buy bar"
+        ]
+      },
+      {
+        "label": "Week 2",
+        "title": "Build trust",
+        "items": [
+          "Reviews on site",
+          "Instalments shown",
+          "Analytics set up"
+        ]
+      },
+      {
+        "label": "Week 3",
+        "title": "Better pages",
+        "items": [
+          "Real photos",
+          "Size tables",
+          "Faster pages"
+        ]
+      },
+      {
+        "label": "Week 4",
+        "title": "Grow",
+        "items": [
+          "Abandoned-cart follow-up",
+          "Local ads",
+          "Track and improve"
+        ]
+      }
+    ],
+    "closing": {
+      "title": "Start with Week 1",
+      "text": "The urgent problems can be fixed in the first week, so customers can buy again straight away."
+    }
+  },
+  "method": "How we checked: every page on laptop and mobile, plus an automatic scan of all product pages. Checkout was tested up to the payment step without placing an order.",
+  "back": {
+    "text": "The urgent problems can be fixed in the first week. Let's go through this report together."
+  },
+  "pdf_name": "sample-report.pdf"
+}
