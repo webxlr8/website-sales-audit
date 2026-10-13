@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://webxlr8.github.io/website-sales-audit/sitemap.xml

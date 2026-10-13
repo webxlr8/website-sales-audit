@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website Sales Audit: free AI website audit skill for Claude (CRO, UX & e-commerce PDF reports)</title>
+<meta name="description" content="Open-source Claude agent skill that audits any website on desktop and mobile for checkout, UX, trust and conversion problems, then builds a client-ready, white-label PDF report with annotated screenshots. Free, MIT licensed.">
+<meta name="keywords" content="website audit, AI website audit, CRO audit, conversion rate optimization, UX audit, ecommerce audit, Shopify audit, WooCommerce audit, website audit report, white label audit report, Claude skill, Claude Code, agent skill">
+<link rel="canonical" href="https://webxlr8.github.io/website-sales-audit/">
+<meta name="theme-color" content="#0b0b0b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Website Sales Audit: AI website audit → client-ready PDF">
+<meta property="og:description" content="Give Claude a URL. Get a branded PDF showing every problem that costs the site sales, with annotated screenshots. Free and open source.">
+<meta property="og:url" content="https://webxlr8.github.io/website-sales-audit/">
+<meta property="og:image" content="https://webxlr8.github.io/website-sales-audit/social-preview.png">
+<meta property="og:image:width" content="1280"><meta property="og:image:height" content="640">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Website Sales Audit: AI website audit → client-ready PDF">
+<meta name="twitter:description" content="Open-source Claude skill: audit any website for sales problems and get a white-label PDF with annotated screenshots.">
+<meta name="twitter:image" content="https://webxlr8.github.io/website-sales-audit/social-preview.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Website Sales Audit","applicationCategory":"BusinessApplication","operatingSystem":"macOS, Linux, Windows","description":"Open-source Claude agent skill that audits websites for conversion, UX and e-commerce problems and produces a white-label PDF report with annotated screenshots.","url":"https://webxlr8.github.io/website-sales-audit/","downloadUrl":"https://github.com/webxlr8/website-sales-audit","softwareVersion":"1.0.0","license":"https://opensource.org/licenses/MIT","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"WebXLR8","url":"https://webxlr8.com"},"image":"https://webxlr8.github.io/website-sales-audit/social-preview.png"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is Website Sales Audit free?","acceptedAnswer":{"@type":"Answer","text":"Yes. It is MIT licensed and can be used for paid client audits."}},
+{"@type":"Question","name":"Does it place orders or fill in forms?","acceptedAnswer":{"@type":"Answer","text":"No. Checkout is tested only up to the payment step and no personal or payment details are entered."}},
+{"@type":"Question","name":"Can I white-label the PDF report?","acceptedAnswer":{"@type":"Answer","text":"Yes. Set your agency name, logos, colours and contacts once in agency.json."}},
+{"@type":"Question","name":"Which platforms does it support?","acceptedAnswer":{"@type":"Answer","text":"Any public website, including Shopify, WooCommerce, WordPress, Wix, Squarespace and Webflow. Shopify stores get extra product-catalogue checks."}}]}
+</script>
+<style>
+  :root{--bg:#0b0b0b;--fg:#fff;--muted:rgba(255,255,255,.7);--acc:#ff6a3a;--line:rgba(255,255,255,.12);--card:#151515}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.6 Inter,system-ui,sans-serif}
+  a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  header{position:relative;overflow:hidden;border-left:8px solid var(--acc)}
+  header:before{content:"";position:absolute;inset:0;background:radial-gradient(60% 70% at 100% 0%,rgba(255,106,58,.3),transparent 70%),radial-gradient(50% 60% at 0% 100%,rgba(255,61,0,.15),transparent 70%);pointer-events:none}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;position:relative}
+  nav b{font-weight:800;letter-spacing:-.02em}nav a{color:var(--fg);margin-left:22px;font-size:15px}
+  .hero{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;padding:40px 0 80px;position:relative}
+  .chip{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);border:1.5px solid rgba(255,106,58,.5);border-radius:999px;padding:6px 14px}
+  h1{font-size:clamp(40px,6vw,68px);line-height:1.03;letter-spacing:-.04em;margin:20px 0 18px;font-weight:800}h1 span{color:var(--acc)}
+  .lead{font-size:20px;color:var(--muted);margin:0 0 28px}
+  .btns a{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;margin:0 10px 10px 0}
+  .btn1{background:var(--acc);color:#111}.btn2{border:1px solid var(--line);color:var(--fg)}
+  .hero img{width:100%;height:auto;border-radius:12px}
+  section{padding:70px 0;border-top:1px solid var(--line)}
+  h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.03em;margin:0 0 12px}
+  .sub{color:var(--muted);margin:0 0 34px;max-width:760px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:15px}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .shots figure{margin:0}.shots img{width:100%;border-radius:10px;border:1px solid var(--line);background:#fff}
+  .shots figcaption{font-size:14px;color:var(--muted);margin-top:6px}
+  ol.steps{counter-reset:s;list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;font-size:15px;color:var(--muted)}
+  ol.steps li:before{content:counter(s);display:block;font:800 30px Inter;color:var(--acc);margin-bottom:6px}
+  ol.steps b{color:var(--fg)}
+  pre{background:#151515;border:1px solid var(--line);border-radius:12px;padding:18px;overflow-x:auto;font-size:14px;line-height:1.5}
+  code{font-family:ui-monospace,Menlo,monospace}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:10px}
+  summary{cursor:pointer;font-weight:600}details p{color:var(--muted);margin:10px 0 0}
+  footer{padding:40px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+  @media(max-width:860px){.hero,.grid,.shots{grid-template-columns:1fr}ol.steps{grid-template-columns:1fr 1fr}nav a{margin-left:12px}}
+  @media(max-width:520px){ol.steps{grid-template-columns:1fr}nav a:not(:last-child){display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <nav><b>Website Sales Audit</b><div><a href="#checks">What it checks</a><a href="#install">Install</a><a href="https://github.com/webxlr8/website-sales-audit">GitHub</a></div></nav>
+  <div class="hero">
+    <div>
+      <span class="chip">Free · Open source · Claude skill</span>
+      <h1>AI website audit that <span>wins clients</span></h1>
+      <p class="lead">Give Claude a URL. It checks every page on desktop and mobile, tests the buying journey, and hands you a white-label PDF report showing every problem that costs the site sales, with annotated screenshots.</p>
+      <div class="btns"><a class="btn1" href="https://github.com/webxlr8/website-sales-audit">Get it on GitHub</a><a class="btn2" href="https://github.com/webxlr8/website-sales-audit/raw/main/examples/demo/sample-report.pdf">See a sample PDF</a></div>
+    </div>
+    <img src="hero.jpg" alt="Pages of a website sales audit PDF report with annotated screenshots" width="1350" height="1080">
+  </div>
+</div></header>
+
+<main>
+<section><div class="wrap">
+  <h2>A professional website audit report in one prompt</h2>
+  <p class="sub">Built for web agencies, freelancers, CRO consultants and Shopify experts who pitch clients, and for store owners who want to know why visitors don't buy.</p>
+  <div class="grid">
+    <div class="card"><h3>📸 Annotated screenshots</h3><p>Numbered red boxes and highlighted text show exactly what's wrong, on desktop and iPhone.</p></div>
+    <div class="card"><h3>🧭 "Where to see it"</h3><p>Click paths and links for every problem, so the client can reproduce it in 30 seconds.</p></div>
+    <div class="card"><h3>🏷️ White-label PDF</h3><p>Your agency's logo, colours and contacts, with the client's own font and logo.</p></div>
+    <div class="card"><h3>✅ Verified findings</h3><p>Every issue is re-checked at full resolution and measured before it goes in the report.</p></div>
+    <div class="card"><h3>🗣️ Plain language</h3><p>What's wrong, why it costs sales, what you'll do. Written for business owners, not developers.</p></div>
+    <div class="card"><h3>🗓️ 30-day plan + "Why us"</h3><p>Ends with a fix plan and a page that sells your services.</p></div>
+  </div>
+</div></section>
+
+<section id="checks"><div class="wrap">
+  <h2>What it checks</h2>
+  <p class="sub">A conversion rate optimization (CRO) and UX checklist built from real e-commerce audits. Works with Shopify, WooCommerce, WordPress, Wix, Squarespace, Webflow and custom sites.</p>
+  <div class="grid">
+    <div class="card"><h3>Checkout &amp; payments</h3><p>Stores that can't take payments, broken carts, missing policy pages.</p></div>
+    <div class="card"><h3>Template leftovers</h3><p>Theme demo text ("clothing items", "$150 free shipping", Lorem ipsum) on live pages.</p></div>
+    <div class="card"><h3>Dark patterns &amp; trust</h3><p>Fake "people viewing" counters, fake stock warnings, no reviews, empty testimonials.</p></div>
+    <div class="card"><h3>Mobile UX bugs</h3><p>Chat buttons covering Add to Cart, cut-off prices, oversized banners.</p></div>
+    <div class="card"><h3>Broken features</h3><p>Wishlist 404s, popups cut off, blogs that don't open, tracking that doesn't track.</p></div>
+    <div class="card"><h3>Findability</h3><p>Titles, meta descriptions, H1s, page speed (LCP), analytics and pixel tags.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><b>Brand.</b> Reads the client's fonts, colours, logo and product feed.</li>
+    <li><b>Crawl.</b> Screenshots every page on desktop and mobile with automatic checks.</li>
+    <li><b>Verify.</b> Claude reviews the pages, tests the buying journey and re-checks every finding.</li>
+    <li><b>Report.</b> Annotated evidence goes into a branded, print-ready PDF.</li>
+  </ol>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Sample report</h2>
+  <p class="sub">Pages from the sample report for Oakline Home, a fictional furniture store. <a href="https://github.com/webxlr8/website-sales-audit/raw/main/examples/demo/sample-report.pdf">Download the full PDF</a>.</p>
+  <div class="shots">
+    <figure><img src="screenshots/summary.png" alt="Audit summary page listing problems by severity" loading="lazy"><figcaption>One-page summary</figcaption></figure>
+    <figure><img src="screenshots/problem-checkout.png" alt="Checkout problem with annotated screenshot" loading="lazy"><figcaption>Urgent problem page</figcaption></figure>
+    <figure><img src="screenshots/problems-trust-mobile.png" alt="Fake urgency and mobile Add to Cart problems" loading="lazy"><figcaption>Two problems per page</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="install"><div class="wrap">
+  <h2>Install in one minute</h2>
+  <p class="sub">Claude Code (also works in Claude.ai and the Claude desktop app: upload the repo ZIP under Settings → Capabilities → Skills).</p>
+<pre><code>git clone https://github.com/webxlr8/website-sales-audit ~/.claude/skills/website-sales-audit
+pip install playwright pillow pypdfium2
+python3 -m playwright install chromium</code></pre>
+  <p class="sub" style="margin-top:20px">Then just ask: <i>"Audit https://example-store.com and make a client report showing everything that's hurting sales."</i></p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>FAQ</h2>
+  <details><summary>Is it free?</summary><p>Yes. It's MIT licensed and can be used for paid client audits.</p></details>
+  <details><summary>Does it place orders or fill in forms?</summary><p>No. Checkout is tested only up to the payment step. No personal or payment details are entered.</p></details>
+  <details><summary>Can I white-label the report?</summary><p>Yes. Set your agency name, logos, colours and contacts once in <code>~/.config/website-sales-audit/agency.json</code>.</p></details>
+  <details><summary>Is it an SEO audit tool?</summary><p>It's a sales and conversion audit. It covers SEO basics (titles, meta descriptions, H1s, speed, tracking) but focuses on what stops visitors from buying.</p></details>
+  <details><summary>Which AI does it need?</summary><p>It's a Claude Agent Skill. The scripts are plain Python and Playwright, so other agents that read SKILL.md can use them too.</p></details>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  © 2026 <a href="https://webxlr8.com">WebXLR8</a> · MIT License · <a href="https://github.com/webxlr8/website-sales-audit">github.com/webxlr8/website-sales-audit</a>
+</div></footer>
+</body>
+</html>
