@@ -1,0 +1,14 @@
+# Build output
+_assets/
+_preview.png
+*-audit.html
+__pycache__/
+*.pyc
+.DS_Store
+
+# Working files from audits (keep client data out of the repo)
+work/
+crawl/
+shots/
+*-audit/
+*.skill
