@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- README rewritten for discoverability: badges, contents, a "how it works" diagram, screenshot gallery and FAQ.
+- Sample report screenshots, README banner and social preview image.
+- GitHub Pages landing page with search and social metadata, a sitemap and robots.txt.
+
 ## 1.0.0 — 2026-10-13
 
 First public release.
