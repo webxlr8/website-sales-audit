@@ -1,0 +1,36 @@
+{
+  "name": "Your Agency",
+  "website": "youragency.com",
+  "email": "hello@youragency.com",
+  "phone": "+1 555 0100",
+  "office": "Your City, Country",
+  "tagline": "Websites that sell.",
+  "about": "Your Agency designs, builds and runs websites and online stores. Replace this text in your agency.json.",
+  "colors": {
+    "accent": "#4f46e5",
+    "accent_ink": "#4338ca",
+    "dark": "#0f172a"
+  },
+  "logo_on_light": null,
+  "logo_on_dark": null,
+  "icon": null,
+  "stats": [],
+  "default_fit": [
+    {
+      "k": "Fixes the urgent problems",
+      "title": "Checkout and trust",
+      "text": "We fix what stops people from buying first, then build trust."
+    },
+    {
+      "k": "Online stores",
+      "title": "Store builds",
+      "text": "Design and development for online stores on the platform you already use."
+    },
+    {
+      "k": "After launch",
+      "title": "We stay",
+      "text": "The team that builds your website also looks after it."
+    }
+  ],
+  "client_logos": []
+}
